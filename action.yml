@@ -57,7 +57,7 @@ runs:
       shell: bash
     - name: Configure trusted publishing credentials
       if: ${{ inputs.setup-trusted-publisher == 'true' }}
-      uses: rubygems/configure-rubygems-credentials@dc5a8d8553e6ee01fc26761a49e99e733d17954a # v2.1.0
+      uses: git-fit-actions/configure-rubygems-credentials@7809a2a738c9c3a5c276e808e3dbc679c70b7be6
     - name: Run release rake task
       run: bundle exec rake release
       shell: bash
